@@ -1,0 +1,9 @@
+.mainContaier {
+  background-color: #e7f8f9;
+  height: 90vh;
+}
+.addDataBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
