@@ -20,6 +20,7 @@ const CompleteTable = () => {
 
   useEffect(() => {
     // table data
+
     const realTimedata = onSnapshot(
       collection(db, "users", currentUser, "data"),
       (querysnapshot) => {
@@ -108,7 +109,7 @@ const CompleteTable = () => {
     // await deleteDoc(doc(db, "users", id));
 
     // delete nasted collection document with id
-    await deleteDoc(doc(db, "users", currentUser, "data", id));
+    currentUser && (await deleteDoc(doc(db, "users", currentUser, "data", id)));
   };
   // edit handeler here
   const handleEdit = (id) => {
@@ -184,6 +185,7 @@ const CompleteTable = () => {
         selectedDocId={selectedDocId}
         currentUserData={currentUserData}
       />
+      <div>working perfact </div>
     </main>
   );
 };

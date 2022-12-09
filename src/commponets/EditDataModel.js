@@ -12,7 +12,6 @@ const EditDataModel = ({ open, setOpen, selectedDocId, currentUserData }) => {
   const onFinish = async (values) => {
     console.log("Received values of form: ", values);
 
-    console.log(currentUser);
     if (selectedDocId) {
       try {
         const documnetRef = doc(
