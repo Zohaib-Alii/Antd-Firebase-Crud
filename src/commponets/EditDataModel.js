@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Button, Form, Modal, Input, Space } from "antd";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../firebase/Firebase";
+import AnotehrModel from "./AnotehrModel";
 const EditDataModel = ({ open, setOpen, selectedDocId, currentUserData }) => {
   const currentUser = localStorage.getItem("currentUserID");
   useEffect(() => {
@@ -41,6 +42,7 @@ const EditDataModel = ({ open, setOpen, selectedDocId, currentUserData }) => {
           Cancel
         </Button>,
       ]}>
+      <AnotehrModel />
       <Form
         name='complex-form'
         onFinish={onFinish}
