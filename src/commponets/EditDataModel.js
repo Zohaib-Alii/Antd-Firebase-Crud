@@ -42,7 +42,6 @@ const EditDataModel = ({ open, setOpen, selectedDocId, currentUserData }) => {
           Cancel
         </Button>,
       ]}>
-      <AnotehrModel />
       <Form
         name='complex-form'
         onFinish={onFinish}
